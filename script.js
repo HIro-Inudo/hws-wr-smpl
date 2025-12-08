@@ -27,7 +27,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
  */
 async function initializeLiff() {
     // ★★★ あなたのLIFF IDに書き換えてください ★★★
-    const myLiffId = "YOUR_LIFF_ID"; 
+    //const myLiffId = "YOUR_LIFF_ID"; 
+    const myLiffId = "2008630643-lk7x55A2"; 
 
     try {
         await liff.init({
