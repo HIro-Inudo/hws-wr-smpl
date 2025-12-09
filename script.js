@@ -34,7 +34,7 @@ async function initializeLiff() {
         await liff.init({
             liffId: myLiffId,
             // trueにすると、ユーザーがLIFFアプリにアクセスした際に自動でログイン処理を実行します
-            //withLoginOnExternalBrowser: false, 
+            withLoginOnExternalBrowser: true, 
         });
 
         // LIFFが初期化されたかチェック
