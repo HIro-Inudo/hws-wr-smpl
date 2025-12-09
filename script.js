@@ -34,19 +34,19 @@ async function initializeLiff() {
         await liff.init({
             liffId: myLiffId,
             // trueにすると、ユーザーがLIFFアプリにアクセスした際に自動でログイン処理を実行します
-            withLoginOnExternalBrowser: false, 
+            //withLoginOnExternalBrowser: false, 
         });
 
         // LIFFが初期化されたかチェック
-        if (!liff.isLoggedIn()) {
+        //if (!liff.isLoggedIn()) {
             // ログインしていなければ、ログインページにリダイレクト
-            liff.login();
-        } else {
+        //    liff.login();
+        //} else {
             // ログイン済みなら、ユーザー情報を取得して表示
-            const profile = await liff.getProfile();
-            const userInfoElement = document.getElementById('userInfo');
-            userInfoElement.innerText = `ようこそ、${profile.displayName} さん`;
-        }
+        //    const profile = await liff.getProfile();
+        //    const userInfoElement = document.getElementById('userInfo');
+        //    userInfoElement.innerText = `ようこそ、${profile.displayName} さん`;
+        //}
     } catch (err) {
         console.error("LIFF Initialization failed", err);
         alert("LIFFの初期化に失敗しました。");
